@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #C7E3B5;
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+  color: ;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #F5F4A3;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #A0C698;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 500px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>MY NAME IS GOVANNI CANTO</h2>
+  <h2> THIS IS MY RESUME</h2>
+ 
+  
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="mainpage.html">My Main Page</a></li>
+      <li><a href="biography.html">Biography</a></li>
+      <li><a href="work.html">Work</a></li>
+	 
+  
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>My Resume</h1>
+    <p>I studied at United Pentecostal School, after graduating from Primary, I studied 4 years at Eden High School</p>
+    <p>I did an Associates Degree in Business Administration at University of Belize, in 2010 I accomplished another Associates Degree in Information Technology
+	at Sacred Heart Junior College.</p>
+	<p>I started to Work at BAHA from 2002 and have been successful and productive in many IT area.</p>
+	<p>I have been in IT Trainings in all Central America with the Belize Linux group.</p>
+	
+  </article>
+</section>
+
+<footer>
+  <p>Created by G. Canto</p>
+</footer>
+
+</body>
+</html>
